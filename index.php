@@ -64,7 +64,7 @@
               
               <!-- Home -->
               <section class="home" id="homepage">
-                <div class="avatar"><img src="img/avatar.jpg" alt="" /></div>
+                <div class="avatar"><img src="img/pmeuel_rounded.jpg" alt="" /></div>
                 <div class="name tcenter">Peter is <?= $verb ?></div>
                 <div class="position tcenter">last update: <?= $time ?></div>
               </section>

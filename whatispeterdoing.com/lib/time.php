@@ -1,4 +1,3 @@
-<?php 
 public function FormatTime($timestamp) {
 
   // Get time difference and setup arrays
@@ -74,4 +73,3 @@ $text = date("F j, Y \a\\t g:i a", $timestamp);
 
 return $text;
 }
-?>

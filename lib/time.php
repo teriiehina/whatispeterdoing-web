@@ -1,4 +1,5 @@
 <?php 
+
 public function FormatTime($timestamp) {
 
   // Get time difference and setup arrays

@@ -1,11 +1,10 @@
 <?php 
   include 'lib/parse.php';
-//    $parse       = new parseObject('Activity');
-//    $parse->name = "working";
-//    $r           = $parse->save();
 
   $query   = new parseQuery('Activity');
   $query->orderByDescending('createdAt');
   $results = $query->find();
+  $verb = $results->results[0]->verb;
+  $time = $results->results[0]->createdAt;
 ?>
-peter is <?= $results->results[0]->verb ?> <?= $results->results[0]->extra ?>
+peter is <?= $verb ?> since <?= $time ?>

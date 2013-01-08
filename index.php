@@ -64,9 +64,9 @@
               
               <!-- Home -->
               <section class="home" id="homepage">
-                <div class="avatar"><img src="http://placehold.it/300x300" alt="" /></div>
+                <div class="avatar"><img src="img/avatar.jpg" alt="" /></div>
                 <div class="name tcenter">Peter is <?= $verb ?></div>
-                <div class="position tcenter">since <?= $time ?></div>
+                <div class="position tcenter">last update: <?= $time ?></div>
               </section>
 
             </div>

@@ -1,14 +1,15 @@
 <?php 
   include 'lib/parse.php';
+  include 'lib/time.php';
 
-  $query   = new parseQuery('Activity');
+  $query     = new parseQuery('Activity');
   $query->orderByDescending('createdAt');
-  $results = $query->find();
-  
-  $verb = $results->results[0]->verb;
-  $time = $results->results[0]->createdAt;
 
+  $results   = $query->find();
   
+  $verb      = $results->results[0]->verb;
+  $timestamp = strtotime($results->results[0]->createdAt);
+  $time      = FormatTime($timestamp);  
 ?>
 
 
